@@ -2,6 +2,8 @@ from flask import Flask, render_template, request
 from experta import *
 import pandas as pd
 import os
+from experta.conditionalelement import OR
+
 
 # Load preprocessed dataset
 csv_path = "preprocessed_disease_dataset.csv"
