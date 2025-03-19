@@ -2,7 +2,7 @@ blinker==1.9.0
 click==8.1.8
 experta==1.9.4
 Flask==3.1.0
-frozendict==2.3.8
+frozendict==1.2  # Downgraded to match experta's requirement
 gunicorn==21.2.0
 itsdangerous==2.2.0
 Jinja2==3.1.6
@@ -16,5 +16,4 @@ schema==0.6.7
 six==1.17.0
 tzdata==2025.1
 Werkzeug==3.1.3
-
 
