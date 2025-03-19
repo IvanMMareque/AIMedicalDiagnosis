@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request
 from experta import *
 import pandas as pd
+import os
 
 # Load preprocessed dataset
 csv_path = "preprocessed_disease_dataset.csv"
@@ -79,4 +80,4 @@ def index():
     return render_template("index.html", diagnosis=diagnosis)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=int(os.getenv("PORT", 5000)), debug=True)
